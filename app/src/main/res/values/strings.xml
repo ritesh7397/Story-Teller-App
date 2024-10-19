@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Story Teller</string>
+
+
+    <string name="StoryTeller">StoryTeller</string>
+    <string name="select">Select</string>
+    <string name="speak">Speak</string>
+    <string name="stop">Stop</string>
+    <string name="read_now">Read Now!</string>
+    <string name="description">Description</string>
+    <string name="what_s_your_age">What\'s your Age</string>
+    <string name="title">title</string>
+    <string name="speed">Speed</string>
+    <string name="slow">Slow</string>
+    <string name="normal">Normal</string>
+    <string name="fast">Fast</string>
+
+</resources>

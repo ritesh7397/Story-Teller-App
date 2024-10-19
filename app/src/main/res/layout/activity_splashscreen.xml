@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashgradeint"
+    tools:context=".activities.splashscreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splashscreen"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        app:lottie_fileName="books.json" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/gelasio_regular"
+            android:text="@string/StoryTeller"
+            android:textColor="#1b262c"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ear" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

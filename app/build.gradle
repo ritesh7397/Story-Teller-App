@@ -1,0 +1,52 @@
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.Pbcoe.Final.StoryTellar"
+        minSdkVersion 22
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resConfigs 'en'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '32.1.0 rc1'
+    namespace 'com.Pbcoe.Final.StoryTellar'
+}
+
+
+apply plugin: 'com.jakewharton.butterknife'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+
+}
